@@ -116,6 +116,7 @@ once. For example `isPromise` is exported from both the `promise` and the
     - [transformCase](#transformcase)
 - __`math`__
     - [clamp](#clamp)
+    - [convertAngle](#convertangle)
 - __`data structures`__
     - [BiMap](#bimap)
     - [SortedArray](#sortedarray)
@@ -1764,6 +1765,35 @@ camel('foo_bar') // 'fooBar'
 
 
 
+
+---
+
+#### `convertAngle` 
+  
+```hs
+(value: number, from: Angle, to: Angle) => number
+```
+
+<sup><sup>_[source](https://github.com/MathisBullinger/froebel/blob/main/convertAngle.ts#L15)_ | _[tests](https://github.com/MathisBullinger/froebel/blob/main/convertAngle.test.ts)_</sup></sup>
+
+> Converts angle from one unit into another.
+
+
+#### Import
+
+```ts
+/* Node: */  import convertAngle from "froebel/convertAngle";
+/* Deno: */  import convertAngle from "https://deno.land/x/froebel@v0.16.1/convertAngle.ts";
+```
+
+
+
+
+#### Example
+```ts
+convertAngle(180, "degree", "radian") // 3.14159
+convertAngle(MAth.PI, "radian", "degree") // 180
+```
 ## Data Structures
 
 #### `BiMap` 
